@@ -28,6 +28,7 @@ public class CityName extends AppCompatActivity {
     String windSpeed;
     String description;
     String forecast;
+    String cityName;
 
     String day1, temp1, speed1, day2, temp2, speed2, day3, temp3, speed3;
 
@@ -61,6 +62,7 @@ public class CityName extends AppCompatActivity {
         mTemp3 = findViewById(R.id.temp3);
         mSpeed3 = findViewById(R.id.speed3);
 
+        cityName = getIntent().getStringExtra("cityName"); // TODO: Pass this value to the function
         getWeatherForecast();
     }
 
