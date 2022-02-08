@@ -39,11 +39,14 @@ public class MainActivity extends AppCompatActivity {
         mEnter = findViewById(R.id.enter);
         EditText editText = findViewById(R.id.city_name);
 
-        cityName = editText.getText().toString().trim();
-
         mEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                cityName = editText.getText().toString().trim().toLowerCase();
+                if(cityName.equals("")) {
+                    Toast.makeText(MainActivity.this, "You did not enter a city name!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 getCity();
             }
         });

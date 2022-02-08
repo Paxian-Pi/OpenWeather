@@ -10,7 +10,7 @@
         android:id="@+id/city_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter City Name"
+        android:hint="@string/enter_city_name"
         android:textSize="20sp"
         android:layout_marginStart="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,11 +22,9 @@
         android:id="@+id/enter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter"
-        android:layout_marginTop="20sp"
+        android:layout_margin="50sp"
+        android:text="@string/get_forecast"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/city_name" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

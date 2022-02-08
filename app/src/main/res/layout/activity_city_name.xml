@@ -31,10 +31,11 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20sp"
-        android:layout_marginBottom="20sp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/info_layout">
 
@@ -42,9 +43,11 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="350sp"
-            app:cardCornerRadius="10sp"
             android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
             android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            app:cardCornerRadius="10sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/info_layout">
@@ -53,6 +56,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -64,37 +69,37 @@
                         android:id="@+id/current_info"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/current_info"
                         android:layout_gravity="center"
                         android:layout_marginTop="20sp"
+                        android:text="@string/current_info"
                         android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/temp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Temperature"
-                        android:layout_marginTop="20sp"
                         android:layout_marginStart="20sp"
-                        android:textSize="18sp"/>
+                        android:layout_marginTop="20sp"
+                        android:text="@string/temperature"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/speed"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Wind Speed"
-                        android:layout_marginTop="5sp"
                         android:layout_marginStart="20sp"
-                        android:textSize="18sp"/>
+                        android:layout_marginTop="5sp"
+                        android:text="@string/wind_speed"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/desc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Description"
-                        android:layout_marginTop="5sp"
                         android:layout_marginStart="20sp"
-                        android:textSize="18sp"/>
+                        android:layout_marginTop="5sp"
+                        android:text="@string/description"
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -106,28 +111,28 @@
                         android:id="@+id/forecast1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Day 1"
                         android:layout_gravity="center"
                         android:layout_marginTop="20sp"
+                        android:text="@string/day_1"
                         android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/temp1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Temperature"
-                        android:layout_marginTop="20sp"
                         android:layout_marginStart="20sp"
-                        android:textSize="18sp"/>
+                        android:layout_marginTop="20sp"
+                        android:text="@string/temperature"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/speed1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Wind Speed"
-                        android:layout_marginTop="5sp"
                         android:layout_marginStart="20sp"
-                        android:textSize="18sp"/>
+                        android:layout_marginTop="5sp"
+                        android:text="@string/wind_speed"
+                        android:textSize="18sp" />
 
                     <!--                    <TextView-->
                     <!--                        android:id="@+id/desc1"-->
@@ -148,28 +153,28 @@
                         android:id="@+id/forecas2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Day 2"
                         android:layout_gravity="center"
                         android:layout_marginTop="20sp"
+                        android:text="@string/day_2"
                         android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/temp2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Temperature"
-                        android:layout_marginTop="20sp"
                         android:layout_marginStart="20sp"
-                        android:textSize="18sp"/>
+                        android:layout_marginTop="20sp"
+                        android:text="@string/temperature"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/speed2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Wind Speed"
-                        android:layout_marginTop="5sp"
                         android:layout_marginStart="20sp"
-                        android:textSize="18sp"/>
+                        android:layout_marginTop="5sp"
+                        android:text="@string/wind_speed"
+                        android:textSize="18sp" />
 
                     <!--                    <TextView-->
                     <!--                        android:id="@+id/desc2"-->
@@ -190,28 +195,28 @@
                         android:id="@+id/forecast3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Day 3"
                         android:layout_gravity="center"
                         android:layout_marginTop="20sp"
+                        android:text="@string/day_3"
                         android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/temp3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Temperature"
-                        android:layout_marginTop="20sp"
                         android:layout_marginStart="20sp"
-                        android:textSize="18sp"/>
+                        android:layout_marginTop="20sp"
+                        android:text="@string/temperature"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/speed3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Wind Speed"
-                        android:layout_marginTop="5sp"
                         android:layout_marginStart="20sp"
-                        android:textSize="18sp"/>
+                        android:layout_marginTop="5sp"
+                        android:text="@string/wind_speed"
+                        android:textSize="18sp" />
 
                     <!--                    <TextView-->
                     <!--                        android:id="@+id/desc3"-->

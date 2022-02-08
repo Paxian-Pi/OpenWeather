@@ -64,6 +64,8 @@ public class CityName extends AppCompatActivity {
 
         cityName = getIntent().getStringExtra("cityName"); // TODO: Pass this value to the function
         getWeatherForecast();
+
+        Log.d("REz", "" + cityName);
     }
 
     private void getWeatherForecast() {
@@ -74,7 +76,7 @@ public class CityName extends AppCompatActivity {
 
 
         WeatherAPI weatherAPI = retrofit.create(WeatherAPI.class);
-        weatherAPI.getCity("lagos").enqueue(new Callback<ResponseBody>() {
+        weatherAPI.getCity(cityName).enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(@NonNull Call<ResponseBody> call, @NonNull Response<ResponseBody> response) {
                 if(response.isSuccessful()) {
@@ -86,10 +88,10 @@ public class CityName extends AppCompatActivity {
                         windSpeed = "Wind Speed: " + jsonObject.getString("wind");
                         description = "Description: " + jsonObject.getString("description");
                         forecast = jsonObject.getString("forecast");
-                        Log.d("REz", "\n"+temperature+"\n"+windSpeed+"\n"+description);
+//                        Log.d("REz", "\n"+temperature+"\n"+windSpeed+"\n"+description);
 
                         JSONArray jsonArray = new JSONArray(forecast);
-                        Log.d("REz", "\n"+jsonArray.getJSONObject(0));
+//                        Log.d("REz", "\n"+jsonArray.getJSONObject(0));
 
 
                         day1 = "Day: " + jsonArray.getJSONObject(0).getString("day");
